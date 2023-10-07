@@ -1,12 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=DM+Serif+Display&family=Quicksand&display=swap');
 
 html {
     scroll-behavior: smooth;
 }
 
 h1 {
-    color: #4D4D4D;
+    margin-bottom: 2px;
+    font-family: 'DM Serif Display', serif;
+    font-size: 6rem;
+    color: #E9F5FF;
 
+}
+
+.h1-blue {
+    color: #98d1ff;
+    filter: drop-shadow(0px 0px 5px #aedbff);
+}
+
+h2 {
+    font-size: 3rem;
+    font-family: 'DM Serif Display', serif;
+    color: #E9F5FF;
 }
 
 p {
@@ -36,6 +50,14 @@ body {
     letter-spacing: .5rem;
 }
 
+hr {
+    border: none;
+    border-top: 5px solid #E9F5FF;
+    border-radius: 5px;
+    padding: 0vw 30vw;
+    filter: drop-shadow(0px 0px 8px #aedbff)
+}
+
 /* nav */
 nav {
     display: flex;
@@ -45,7 +67,7 @@ nav {
     z-index: 3;
     padding: 2.5vh 13vh;
     margin: 0;
-    background-color: rgb(10, 10, 10);
+    background-color: rgba(10, 10, 10, 0.9);
     position: sticky;
     top: 0;
 
@@ -70,7 +92,7 @@ a {
 }
 
 .logo {
-    width: 7vw;
+    width: 100px;
 
     animation: turn-on-text 2.25s ease-in-out forwards;
 }
@@ -94,6 +116,9 @@ header {
         url('../images/photo/header-background.png');
     background-size: cover;
     background-position: center;
+
+    animation: turn-on-text 1s ease-in-out forwards;
+
 }
 
 header div {
@@ -101,6 +126,8 @@ header div {
     flex-direction: column;
     align-items: center;
     width: 50vw;
+
+    animation: turn-on-text 2.25s ease-in-out forwards;
 }
 
 header .header-container div {
@@ -114,6 +141,7 @@ header .header-container div {
     padding: 10px 30px;
     margin: 10px;
     border: 2px solid #5ed1e0;
+    transition: all .2s ease-out;
 }
 
 .header-buttons:hover {
