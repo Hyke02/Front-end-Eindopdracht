@@ -1,0 +1,522 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Hammersmith+One&family=Sansita:wght@800&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* V nav V */
+
+nav img {
+    width: 1vw;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(5, 11, 19, 0.9);
+    padding: 2vh 5vw;
+}
+
+nav a,
+nav a:link,
+nav a:visited {
+    text-decoration: none;
+    color: rgb(227, 227, 227)
+}
+
+nav a {
+    font-size: 1rem;
+    font-family: 'Hammersmith One', sans-serif;
+    padding: 0 1vw;
+    transition: 1s;
+}
+
+nav a:hover {
+    color: burlywood;
+}
+
+/* V Header V */
+
+hr {
+    border: none;
+    border-top: 5px solid #ffffff;
+    border-radius: 5px;
+    width: 80%;
+    filter: drop-shadow(0px 0px 8px #ffffff);
+    margin: auto;
+}
+
+header {
+    background-image: url(/images/headerabckground.png);
+    background-position: center;
+    background-size: cover;
+
+    height: calc(100vh - 58.22px);
+}
+
+.headerContainer {
+    padding: 20vh 25vw;
+}
+
+.headerText {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+h1 {
+    font-size: 8rem;
+    margin-bottom: 2vh;
+    margin-top: 0;
+    font-family: 'Abril Fatface', serif;
+    color: rgb(255, 255, 255);
+    filter: drop-shadow(0px 5px 5px #51515178);
+}
+
+header p {
+    font-size: 1.2rem;
+    text-align: justify;
+    font-family: 'Hammersmith One', sans-serif;
+    color: rgb(21, 21, 21);
+}
+
+.headerLink {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 5vh;
+}
+
+.headerLink a {
+    text-decoration: none;
+    font-family: 'Hammersmith One', sans-serif;
+    font-size: 1.3rem;
+    padding: 1.5vh 1vw;
+    border-radius: 10px;
+    margin: 0 1vw;
+    transition: all .2s;
+
+    color: rgb(90, 90, 90);
+    background-color: rgba(0, 0, 0, 0.15);
+
+    width: 10vw;
+
+    animation: none;
+}
+
+/* .headerLink button:hover {
+    transform: scale(1.2);
+    color: white;
+} */
+
+.embrace:hover {
+    animation: embracee 2s infinite ease-out;
+}
+
+.reject:hover {
+    animation: shaking .2s infinite;
+}
+
+/* V Cards V */
+
+main {}
+
+.cards-title-container {
+    background-color: antiquewhite;
+    height: 100vh;
+}
+
+h2 {
+    font-family: 'Abril Fatface', serif;
+    font-size: 3rem;
+    text-align: center;
+    margin: 0;
+    padding: 5vh;
+}
+
+.cardsContainer {
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+
+    background-color: white;
+    height: 70vh;
+    width: 25vw;
+    border-radius: 20px;
+    overflow: hidden;
+
+    transition: .1s;
+}
+
+article:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0px 5px 5px #6b6b6b2e);
+}
+
+article img {
+    max-width: 100%;
+}
+
+h3 {
+    font-size: 1.6rem;
+    font-family: 'Sansita', sans-serif;
+    color: rgb(20, 20, 20);
+    margin: 1vh 0;
+}
+
+article div p {
+    font-family: 'Hammersmith One', sans-serif;
+    color: rgb(20, 20, 20);
+
+    max-width: 200ch;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.starsOn {
+    font-size: 30px;
+    color: darksalmon;
+    filter: drop-shadow(0px 0px 4px darksalmon);
+}
+
+.starsOut {
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.474);
+}
+
+article button {
+    font-family: 'Hammersmith One', sans-serif;
+    font-size: 1rem;
+    padding: 1.5vh 1vw;
+    border: none;
+    border-radius: 10px;
+    transition: all .2s;
+
+    color: rgb(90, 90, 90);
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+article button:hover {
+    transform: scale(1.1);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+article div {
+    padding: 2vh 2vw;
+}
+
+/* V Form V */
+
+.formContainer {
+    background-image: url(/images/headerabckground.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+h4 {
+
+    font-size: 2rem;
+    font-family: 'Abril Fatface', serif;
+    color: rgb(20, 20, 20);
+    margin: 5vh 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+
+}
+
+.formfield {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: .5vh;
+}
+
+.formfield-two {
+    display: flex;
+    gap: 2vw
+}
+
+form label {
+    color: rgb(20, 20, 20);
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+form input,
+form select,
+form textarea {
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 20px;
+    border: none
+}
+
+form button {
+    font-family: 'Hammersmith One', sans-serif;
+    font-size: 1rem;
+    padding: 1.5vh 1vw;
+    border: none;
+    border-radius: 10px;
+    transition: all .2s;
+
+    color: rgb(90, 90, 90);
+    background-color: rgba(0, 0, 0, 0.15);
+
+    padding: 10px;
+    border-radius: 20px;
+}
+
+form button:hover {
+    transform: scale(1.1);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+input:valid:not(:placeholder-shown),
+textarea:valid,
+select:valid {
+    filter: drop-shadow(0px 0px 10px rgb(255, 255, 255));
+}
+
+input:invalid:not(:placeholder-shown):not(:focus) {
+    filter: drop-shadow(0px 0px 10px rgb(255, 160, 160));
+}
+
+label,
+::placeholder,
+input,
+option,
+select {
+    font-family: 'Hammersmith One', sans-serif;
+}
+
+/*  V Footer V */
+
+.logo {
+    width: 2vw;
+    filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.392));
+    grid-area: logo;
+    justify-self: baseline;
+    align-self: center;
+}
+
+.copyright {
+    grid-area: copyright;
+    justify-self: baseline;
+    align-self: center;
+}
+
+.socials {
+    grid-area: socials;
+    display: flex;
+}
+
+.socials img {
+    width: 2vw;
+}
+
+.policy {
+    grid-area: policy;
+    justify-self: end;
+    align-self: center;
+}
+
+footer {
+    background-color: rgba(5, 11, 19, 0.9);
+    display: grid;
+    grid-template-columns: [line1] 5vw [line2] 15vw [line3] auto [line4] 30vw [line5] 5vw [end];
+    grid-template-rows: [line1] 2vw [line2] 6vh [line3] 2vw [line4] 2vw [line5] 2vw [end];
+    grid-template-areas:
+        ". . . . ."
+        ". logo . . ."
+        ". copyright . policy ."
+        ". socials . . ."
+        ". . . . .";
+}
+
+.copyright {
+    font-size: .6rem;
+    font-family: 'DM Serif Display', serif;
+    letter-spacing: .15rem;
+    color: #a2a2a2;
+}
+
+.policy a {
+    font-size: 1rem;
+    text-decoration: none;
+    margin: 0 1vw;
+    color: #a2a2a2;
+}
+
+/* Voor mobieltjes van 480 breed */
+@media (width <=480px) {
+
+    nav,
+    nav div {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 4vh;
+    }
+
+    nav img {
+        width: 15vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    h1 {
+        font-size: 6rem;
+    }
+
+    header p {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .headerContainer {
+        padding: 20vh 4vw;
+    }
+
+    .headerLink {
+        text-align: center;
+        margin-top: 3vh;
+    }
+
+    .headerLink button {
+        padding: 1.5vh 0;
+        margin: 0 5vw;
+
+        width: 25vw;
+        height: 6vh;
+    }
+
+    header {
+        height: 100vh;
+    }
+
+    .cards-title-container {
+        height: auto;
+        padding-bottom: 2vh;
+    }
+
+    .cardsContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    article {
+        height: 70vh;
+        width: 80vw;
+    }
+
+    article div {
+        padding: 7vh 8vw;
+    }
+
+    footer {
+        border-top: 2px solid #aedbff;
+        max-width: 844px;
+        background-color: rgba(5, 11, 19, 0.9);
+        display: grid;
+        grid-template-columns: 10vw auto 10vw;
+        grid-template-rows: 10vw repeat(3, 10vw) 30vw 10vw;
+        grid-template-areas:
+            ". . ."
+            ". logo ."
+            ". copyright ."
+            ". socials ."
+            ". policy ."
+            ". . .";
+    }
+
+    .logo {
+        width: 10vw;
+        justify-self: center;
+    }
+
+    .copyright {
+        justify-self: center;
+    }
+
+    .socials {
+        display: flex;
+        justify-self: center;
+    }
+
+    .socials img {
+        width: 10vw;
+    }
+
+    .policy {
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        text-align: center;
+        gap: 2vh;
+    }
+}
+
+@media (orientation: landscape) {}
+
+@keyframes embracee {
+    0% {
+        transform: scale(1);
+        filter: drop-shadow(0px 0px 0px rgb(252, 224, 112))
+    }
+
+    50% {
+        transform: scale(1.2);
+        filter: drop-shadow(0px 0px 50px rgb(0, 0, 0));
+        color: white;
+    }
+
+    100% {
+        transform: scale(1);
+        filter: drop-shadow(0px 5px 5px #51515100);
+    }
+}
+
+@keyframes shaking {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+        filter: drop-shadow(0px 5px 10px red);
+    }
+
+    25% {
+        transform: translate(5px, 5px) rotate(5deg);
+        color: red;
+    }
+
+    50% {
+        transform: translate(0, 0) rotate(0eg);
+    }
+
+    75% {
+        transform: translate(-5px, 5px) rotate(-5deg);
+    }
+
+    100% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+}

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet/style.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <div>
+            <picture>
+                <source media="(min-width:1863px)" srcset="images/v.png">
+                <source media="(min-width:465px)" srcset="images/b.png">
+                <img src="images/v.png" alt="logo"">
+            </picture>
+        </div>
+        <div>
+            <a href=" #contact">Contact</a>
+                <a href="#cards">Review</a>
+        </div>
+    </nav>
+
+    <header>
+        <div class="headerContainer">
+            <div class="headerText">
+                <h1>Veil Beauty</h1>
+                <hr>
+                <p>
+                    Within the realm of beauty lies a hidden laboratory of innovation, where secrets dance between vials
+                    and
+                    skincare. Discover a transformative experience that transcends the ordinary, where experimentation
+                    and
+                    beauty converge in unexpected ways. Unveil the mysteries behind flawless skin as whispers of
+                    evolution
+                    echo
+                    through each curated offering.
+                </p>
+            </div>
+            <div class="headerLink">
+                <a class="embrace" href="https://i.pinimg.com/736x/2c/35/4f/2c354f896047668410da42546b702c01.jpg"
+                    target="_blank">Embrace</a>
+                <a class="reject"
+                    href="https://i0.wp.com/www.the-american-interest.com/wp-content/uploads/2016/09/Tom_Lea_-_2000_Yard_Stare.jpg?fit=1000%2C634&ssl="
+                    target="_blank">Reject</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="cards-title-container" id="cards">
+            <h2>Customer Reviews</h2>
+            <div class="cardsContainer">
+                <article>
+                    <img src="images/cards_image_1.jpg" alt="cardImage">
+                    <div>
+                        <h3>Sophia</h3>
+                        <small class="starsOn">★★★★★</small>
+                        <p>Love the innovative products and the seamless shopping experience! Highly recommend for
+                            anyone
+                            looking for quality skincare with a touch of uniqueness.</p>
+                        <button>Read more</button>
+                    </div>
+                </article>
+
+                <article>
+                    <img src="images/cards_image_1.jpg" alt="cardImage">
+                    <div>
+                        <h3>Ava</h3>
+                        <small class="starsOn">★★★★★</small>
+                        <p>This site is a game-changer! Found exactly what I needed, and the results are incredible.
+                            10/10, will be back for more!</p>
+                        <button>Read more</button>
+                    </div>
+                </article>
+
+                <article>
+                    <img src="images/cards_image_1.jpg" alt="cardImage">
+                    <div>
+                        <h3>Isabella</h3>
+                        <small class="starsOn">★★★</small> <small class="starsOut">★★</small>
+                        <p>I had high hopes for these products, but unfortunately, they didn't quite meet my
+                            expectations. The quality felt average, and I didn't notice the promised results. Was hoping
+                            for a bit more considering the hype surrounding them.</p>
+                        <button>Read more</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="formContainer" id="contact">
+            <h4>Contact Form</h4>
+            <form action="">
+                <div class="formfield-two">
+                    <div class="formfield">
+                        <label for="firstname">Name</label>
+                        <input type="text" name="firstname" id="firstname" placeholder="Name" required>
+                    </div>
+
+                    <div class="formfield">
+                        <label for="lastname">LastName</label>
+                        <input type="text" name="lastname" id="lastname" placeholder="LastName" required>
+                    </div>
+                </div>
+
+                <div class="formfield">
+                    <label for="e-mail">e-Mail</label>
+                    <input type="email" name="e-mail" id="e-mail" placeholder="e-Mail" required>
+
+                </div>
+
+                <div class="formfield-two">
+                    <div class="formfield">
+                        <label for="adres">Adres</label>
+                        <input type="text" name="adres" id="adres" placeholder="Adress" required>
+                    </div>
+                    <div class="formfield">
+                        <label for="birthday">Date of Birth</label>
+                        <input type="text" onfocus="this.type='date'" name="birthday" id="birthday"
+                            placeholder="dd/mm/yyyy" required>
+                    </div>
+                </div>
+
+                <div class="formfield">
+                    <label for="subject">Lodge</label>
+                    <select name="subject" id="subject" required>
+                        <option value="" disabled selected>Subject</option>
+                        <option value="Japanse-lodge">Products</option>
+                        <option value="Ardenne-lodge">Samples</option>
+                        <option value="Winter-lodge">Volunteer</option>
+                    </select>
+                </div>
+
+                <div class="formfield">
+                    <label for="message">Message</label>
+                    <textarea name="message" rows="7" id="message" placeholder="Your message..." required></textarea>
+                </div>
+
+                <label>Sign up for newsletter</label>
+
+                <div class="newsletter">
+                    <input type="radio" id="yes" name="option" value="yes" required>
+                    <label for="yes">Yes</label>
+
+                    <input type="radio" id="no" name="option" value="No">
+                    <label for="no">No</label>
+                </div>
+
+
+                <div class="agreement">
+                    <input type="checkbox" id="agreement" name="agreement" value="agreement" required>
+                    <label for="agreement">agree with the terms and conditions</label>
+                </div>
+
+                <button type="submit">Send</button>
+
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <img class="logo" src="images/v.png" alt="HyNokon-logo">
+        <small class="copyright">COPYRIGHT © 2023 VEIL BEAUTY™</small>
+        <div class="socials">
+            <a href="https://instagram.com/uefa_02?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr" target="_blank"><img
+                    src="images/icon-instagram.svg" alt="Instagram-icon" /></a>
+
+            <a href="https://nl-nl.facebook.com" target="_blank"><img src="images/icon-facebook.svg"
+                    alt="facebook-icon" /></a>
+
+            <a href="https://www.tiktok.com/@uefa_?_t=8gL6o64yHqa&_r=1" target="_blank"><img
+                    src="images/icon-tiktok.svg" alt="tiktok-icon" /></a>
+        </div>
+        <div class="policy">
+            <a href="https://policies.google.com/privacy?hl=en-US" target="_blank">Privacy</a>
+            <a href="https://help.instagram.com/581066165581870" target="_blank">Terms of use</a>
+            <a href="https://commission.europa.eu/cookies-policy_en" target="_blank">Cookies</a>
+        </div>
+    </footer>
+</body>
+
+</html>
