@@ -243,7 +243,6 @@ form {
     display: flex;
     flex-direction: column;
     gap: 2vh;
-    width: 90vw;
 
 }
 
@@ -441,7 +440,9 @@ footer {
         padding-bottom: 3vh;
     }
 
-    form {}
+    form {
+        width: 90vw;
+    }
 
     .formfield-two {
         flex-direction: column;
