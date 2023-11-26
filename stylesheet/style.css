@@ -109,11 +109,6 @@ header p {
     animation: none;
 }
 
-/* .headerLink button:hover {
-    transform: scale(1.2);
-    color: white;
-} */
-
 #embrace:hover {
     animation: embracee 2s infinite ease-out;
     border: 2px solid white;
@@ -243,6 +238,7 @@ form {
     display: flex;
     flex-direction: column;
     gap: 2vh;
+    width: 40vw;
 
 }
 
